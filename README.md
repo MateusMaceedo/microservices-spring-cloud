@@ -19,4 +19,7 @@ Antes de começar os projetos do curso instale databases ***Elasticsearch*** e *
 - Clique em Install e após a finalização da instalação clique em Finish.
 - Para testar o Redis abra o Windows power shell ou o prompt de comando, digite ***redis-cli*** e dê enter.
 - O prompt exibirá o IP 127.0.0.1:6379
-- Digite a palavra ´ping´ e dê enter, o prompt responderá com a palavra ***PONG***.
+- Digite a palavra ***ping*** e dê enter, o prompt responderá com a palavra ***PONG***.
+
+#### Dependências:
+Para cada um dos projetos seguem as dependências que devem ser inseridas nos arquivos >build.gradle
