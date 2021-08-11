@@ -22,4 +22,44 @@ Antes de começar os projetos do curso instale databases ***Elasticsearch*** e *
 - Digite a palavra ***ping*** e dê enter, o prompt responderá com a palavra ***PONG***.
 
 #### Dependências:
-Para cada um dos projetos seguem as dependências que devem ser inseridas nos arquivos >build.gradle
+Para cada um dos projetos seguem as dependências que devem ser inseridas nos arquivos **build.gradle**
+
+- [x] config-server:
+```
+plugins {
+ id 'org.springframework.boot' version '2.5.3'
+ id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+ id 'java'
+}
+​
+group = 'com.dio'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+​
+repositories {
+ mavenCentral()
+}
+​
+ext {
+ set('springCloudVersion', "2020.0.3")
+}
+​
+dependencies {
+ implementation 'org.springframework.boot:spring-boot-starter-actuator'
+ implementation 'org.springframework.boot:spring-boot-starter-web'
+ implementation 'org.springframework.cloud:spring-cloud-config-server'
+ implementation 'org.springframework.cloud:spring-cloud-starter-config'
+ testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+​
+dependencyManagement {
+ imports {
+  mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+ }
+}
+​
+test {
+ useJUnitPlatform()
+}
+​
+```
