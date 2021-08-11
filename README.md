@@ -1,2 +1,6 @@
-# microservices-spring-cloud
-Projeto em Java com Spring Cloud construído a partir do aprendizado adquirido no bootcamp dio-santander
+#### Versões Java e Spring
+- Spring 2.5.3 +
+- Java 11 +
+
+#### Preparando o Ambiente
+Antes de começar os projetos do curso instale databases ***Elasticsearch e ***Redis.
