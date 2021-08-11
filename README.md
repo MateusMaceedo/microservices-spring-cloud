@@ -3,4 +3,4 @@
 - Java 11 +
 
 #### Preparando o Ambiente
-Antes de começar os projetos do curso instale databases ***Elasticsearch e ***Redis.
+Antes de começar os projetos do curso instale databases ***Elasticsearch*** e ***Redis***.
